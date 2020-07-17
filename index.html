@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"    >
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Ла Скала</title>
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <nav class="header-navbar">
+            <nav class="header-navbar animate__animated animate__fadeInDown wow" data-wow-duration="1.5s">
                 <div class="navbar-block">
                     <a href="#" class="header-navbar__item">Главная</a>
                     <a href="#" class="header-navbar__item">о театре</a>
@@ -25,7 +26,7 @@
             </nav>
         </div>
         <div class="header-container">
-            <div class="header-container__block">
+            <div class="header-container__block animate__animated animate__fadeInLeft wow" data-wow-duration="1.5s">
                 <h1 class="header-container__title">Большой театр</h1>
                 <p class="header-container__text">Большо́й теа́тр — петербургский театр, существовавший в 
                 1784—1886 годах, с 1886 года — Петербургская консерватория. Первое постоянное в 
@@ -34,8 +35,8 @@
                 <a href="#" class="header-container__btn">афиша</a>
             </div>
             <div class="header-container__block">
-                <img src="img/slider-container.png" alt="Slider" class="header-container__img">
-                <div class="header-container__slider">
+                <img src="img/slider-container.png" alt="Slider" class="header-container__img animate__animated animate__fadeInRight wow" data-wow-duration="1.5s">
+                <div class="header-container__slider animate__animated animate__fadeInUp wow" data-wow-duration="1.5s">
                     <a href="#" class="header-container__item">
                         <img src="img/Arrow-1.png" alt="" class="header-container__arrow">
                         <p class="header-container__info">Пред</p>
@@ -47,7 +48,7 @@
                 </div>
             </div>
         </div>
-        <div class="header-contacts">
+        <div class="header-contacts animate__animated animate__fadeInDown wow" data-wow-duration="2.2s">
             <p class="header-contacts__text">контактная информация</p>
             <div class="header-contacts__line"></div>
             <div class="header-brends">
@@ -60,8 +61,8 @@
     </header>  
     <section class="about">
         <div class="container">
-            <h2 class="about__title"><span class="about-span">о</span> театре</h2>
-            <div class="about-body">
+            <h2 class="about__title animate__animated animate__fadeInDown wow"><span class="about-span">о</span> театре</h2>
+            <div class="about-body animate__animated animate__fadeInLeft wow" data-wow-duration="1.5s">
                 <div class="about-body__item">
                     <h3 class="about-body__title about-body__good">Самый лучший театр СПБ</h3>
                     <p class="about-body__text">Как свидетельствуют архивные документы, 
@@ -92,8 +93,8 @@
         </div>
     </section>
     <section class="staging">
-        <h2 class="staging__title"><span>наши</span> постановки</h2>
-        <div class="staging-body">
+        <h2 class="staging__title animate__animated animate__fadeInDown wow"><span>наши</span> постановки</h2>
+        <div class="staging-body animate__animated animate__fadeInRight wow" data-wow-duration="1.5s">
             <div class="staging-body__img staging-body__oscar">
                 <p class="staging-body__text">Оскар 2020</p>
                 <p class="staging-body__date">сентябрь 2020</p>
@@ -119,7 +120,7 @@
     <section class="best">
         <div class="container">
             <div class="best-container">
-                <div class="best-main">
+                <div class="best-main animate__animated animate__fadeInLeft wow" data-wow-duration="1.5s">
                     <div class="best-main__item">
                         <div class="best-block">
                             <p class="best-block__text">2018</p>
@@ -143,8 +144,8 @@
     </section>
     <section class="partners">
         <div class="container">
-            <h2 class="partners__title"><span>партнеры</span> театра</h2>
-            <div class="partners-block">
+            <h2 class="partners__title animate__animated animate__fadeInDown wow"><span>партнеры</span> театра</h2>
+            <div class="partners-block animate__animated animate__fadeInRight wow" data-wow-duration="1.5s">
                 <div class="partners-block__item">
                     <img src="img/gazprom.png" alt="ГазПром" class="partners-block__img">
                     <img src="img/gazprom.png" alt="ГазПром" class="partners-block__img">
@@ -162,8 +163,8 @@
     </section>
     <section class="become">
         <div class="container">
-            <h2 class="become__title"><span>стать</span> мецантом</h2>
-            <div class="become-block">
+            <h2 class="become__title animate__animated animate__fadeInDown wow"><span>стать</span> мецантом</h2>
+            <div class="become-block animate__animated animate__fadeInLeft wow" data-wow-duration="1.5s">
                 <div class="become-block__item">
                    <div class="become-block__element become-block__address">
                         <p class="become-block__text">+7 (812) 123-45-55</p>
@@ -199,8 +200,20 @@
             </div>
         </div>
     </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-block animate__animated animate__fadeInUp wow" data-wow-duration="1.5s">
+                <div class="footer-block__line"></div>
+                <p class="footer-block__text">(с) Все права защищены. Большой театр. 2020</p>
+                <p class="footer-block__text">Разработано d-e-n.ru</p>
+            </div>
+        </div>
+    </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
 </body>
 </html
