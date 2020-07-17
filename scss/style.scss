@@ -64,7 +64,7 @@ span{
 .header{
     width: 100%;
     padding: 50px 0px 122px;
-    background: url(../img/background.png);
+    background: url(../img/background.webp);
     background-size: cover;
     &-navbar{
         display: flex;
@@ -244,16 +244,16 @@ span{
             position: relative;
         }
         &__oscar{
-            background: url(../img/oscar.png);
+            background: url(../img/oscar.webp);
         }
         &__moliere{
-            background: url(../img/Moliere.png);
+            background: url(../img/Moliere.webp);
         }
         &__gramaphone{
-            background: url(../img/gramaphone.png);
+            background: url(../img/gramaphone.webp);
         }
         &__nutcracker{
-            background: url(../img/nutcracker.png);
+            background: url(../img/nutcracker.webp);
         }
         &__link{
             opacity: 0;
@@ -310,7 +310,7 @@ span{
     background: #333333;
     padding: 150px 0px;
     &-main{
-        background: url(../img/best.png);
+        background: url(../img/best.webp);
         background-size: cover;
         padding: 126px 0px;
         display: flex;

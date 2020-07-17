@@ -48,7 +48,7 @@ span {
 .header {
   width: 100%;
   padding: 50px 0px 122px;
-  background: url(../img/background.png);
+  background: url(../img/background.webp);
   background-size: cover; }
   .header-navbar {
     display: -webkit-box;
@@ -256,13 +256,13 @@ span {
       height: 550px;
       position: relative; }
     .staging-body__oscar {
-      background: url(../img/oscar.png); }
+      background: url(../img/oscar.webp); }
     .staging-body__moliere {
-      background: url(../img/Moliere.png); }
+      background: url(../img/Moliere.webp); }
     .staging-body__gramaphone {
-      background: url(../img/gramaphone.png); }
+      background: url(../img/gramaphone.webp); }
     .staging-body__nutcracker {
-      background: url(../img/nutcracker.png); }
+      background: url(../img/nutcracker.webp); }
     .staging-body__link {
       opacity: 0;
       margin: 0 auto;
@@ -317,7 +317,7 @@ span {
   background: #333333;
   padding: 150px 0px; }
   .best-main {
-    background: url(../img/best.png);
+    background: url(../img/best.webp);
     background-size: cover;
     padding: 126px 0px;
     display: -webkit-box;
