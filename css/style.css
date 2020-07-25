@@ -1,7 +1,14 @@
 /* General styles */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  position: relative;
+  -webkit-box-sizing: bo;
+          box-sizing: bo; }
 
 .container {
   width: 1110px;
@@ -46,6 +53,7 @@ span {
 
 /* Header / first block */
 .header {
+  position: relative;
   width: 100%;
   padding: 50px 0px 122px;
   background: url(../img/background.webp);
@@ -74,6 +82,7 @@ span {
       letter-spacing: 0.05em;
       text-decoration: none; }
   .header-container {
+    position: relative;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -82,7 +91,7 @@ span {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 1035px;
+    width: 1110px;
     margin: 0 auto; }
     .header-container__block:first-child {
       padding-top: 280px; }
@@ -148,6 +157,9 @@ span {
     opacity: 0.75;
     width: 150px;
     padding: 330px 0px 86px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 100%;
     top: 0; }
     .header-contacts__text {
       -webkit-transform: rotate(-90deg);
@@ -243,34 +255,52 @@ span {
 */
 .staging {
   background: #333333;
-  padding: 1px 0px; }
+  padding: 1px 0px;
+  position: relative; }
   .staging__title {
     margin-bottom: 100px; }
   .staging-body {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    width: 100%;
+    height: 550px; }
     .staging-body__img {
-      width: 25%;
+      position: relative;
       height: 550px;
-      position: relative; }
+      width: 25%; }
     .staging-body__oscar {
-      background: url(../img/oscar.webp); }
+      background: url(../img/oscar.webp);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%; }
     .staging-body__moliere {
-      background: url(../img/Moliere.webp); }
+      background: url(../img/Moliere.webp);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%; }
     .staging-body__gramaphone {
-      background: url(../img/gramaphone.webp); }
+      background: url(../img/gramaphone.webp);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%; }
     .staging-body__nutcracker {
-      background: url(../img/nutcracker.webp); }
+      background: url(../img/nutcracker.webp);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%; }
     .staging-body__link {
+      position: absolute;
+      top: -webkit-calc(50% - 40px);
+      top: calc(50% - 40px);
+      left: -webkit-calc(50% - 50px);
+      left: calc(50% - 50px);
       opacity: 0;
-      margin: 0 auto;
-      margin-top: -webkit-calc(50% - 30px);
-      margin-top: calc(50% - 30px);
       width: 30px;
       height: 30px;
-      background: url(../img/search.png) no-repeat 50% 50%;
+      background: url(../img/search.png) no-repeat;
+      background-position: 50% 50%;
       border-radius: 100px;
       width: 100px;
       height: 100px;
@@ -315,10 +345,12 @@ span {
 */
 .best {
   background: #333333;
-  padding: 150px 0px; }
+  padding: 150px 0px;
+  position: relative; }
   .best-main {
     background: url(../img/best.webp);
     background-size: cover;
+    background-position: 50% 50%;
     padding: 126px 0px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -370,11 +402,11 @@ span {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     margin-top: 80px; }
+  .partners-block__img {
+    width: 200px;
+    height: 96px;
+    margin-right: 50px; }
 
 /*
     Become / sixth block
@@ -449,7 +481,11 @@ span {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
     .become-block__btn {
       margin-top: 13px; }
 
