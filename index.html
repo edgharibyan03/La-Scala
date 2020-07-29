@@ -11,21 +11,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Ла Скала</title>
 </head>
-<body>
+<body class="body">
     <header class="header">
         <div class="container">
             <nav class="header-navbar animate__animated animate__fadeInDown wow" data-wow-duration="1.5s">
-                <div class="navbar-block">
+                <div class="navbar-block navbar-block__links">
                     <a href="#" class="header-navbar__item">Главная</a>
                     <a href="#" class="header-navbar__item">о театре</a>
                     <a href="#" class="header-navbar__item">Наши постановки</a>
                     <a href="#" class="header-navbar__item">партнеры театра</a>
                     <a href="#" class="header-navbar__item">контакты</a>
+                    <div class="navbar-brands">
+                        <div class="navbar-brands__block">
+                            <div class="navbar-brands__elem">
+                                <div class="navbar-brands__item fa fa-facebook fa-3x"></div>
+                                <div class="navbar-brands__item fa fa-instagram fa-3x"></div>
+                            </div>
+                            <div class="navbar-brands__elem">
+                                <div class="navbar-brands__item fa fa-youtube-play fa-3x"></div>
+                                <div class="navbar-brands__item fa fa-vk fa-3x"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="navbar-block">
-                    <a href="#" class="header-navbar__phone">+7 495 123-45-67</a>
+                    <a href="#" class="header-navbar__phone header-navbar__telephone">+7 495 123-45-67</a>
                 </div>
             </nav>
+            <div class="navbar-hamb animate__animated animate__fadeInDown wow">
+                <span class="navbar-hamb__burger"></span>
+            </div>
         </div>
         <div class="header-container">
             <div class="header-container__block animate__animated animate__fadeInLeft wow" data-wow-duration="1.5s">
@@ -152,18 +167,34 @@
             <div class="partners-block animate__animated animate__fadeInRight wow swiper-container" id="swiper-container3" data-wow-duration="1.5s">
                 <div class="swiper-wrapper">
                     <div class="partners-block__item swiper-slide">
-                        <img src="img/gazprom.png" alt="ГазПром" class="partners-block__img">
-                        <img src="img/gazprom.png" alt="ГазПром" class="partners-block__img">
-                        <img src="img/gazprom.png" alt="ГазПром" class="partners-block__img">
-                        <img src="img/gazprom.png" alt="ГазПром" class="partners-block__img">
+                        <div class="partners-block__pict">
+                            <img src="img/gazprom.png" alt="ГазПром" class="partners-block__img">
+                        </div>
+                        <div class="partners-block__pict">
+                            <img src="img/gazprom.png" alt="ГазПром" class="partners-block__img">
+                        </div>
+                        <div class="partners-block__pict">
+                            <img src="img/gazprom.png" alt="ГазПром" class="partners-block__img">
+                        </div>
+                        <div class="partners-block__pict">
+                            <img src="img/gazprom.png" alt="ГазПром" class="partners-block__img">
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-wrapper">
                     <div class="partners-block__item swiper-slide">
-                        <img src="img/gazprom.png" alt="ГазПром" class="partners-block__img">
-                        <img src="img/gazprom.png" alt="ГазПром" class="partners-block__img">
-                        <img src="img/gazprom.png" alt="ГазПром" class="partners-block__img">
-                        <img src="img/gazprom.png" alt="ГазПром" class="partners-block__img">
+                        <div class="partners-block__pict">
+                            <img src="img/gazprom.png" alt="ГазПром" class="partners-block__img">
+                        </div>
+                        <div class="partners-block__pict">
+                            <img src="img/gazprom.png" alt="ГазПром" class="partners-block__img">
+                        </div>
+                        <div class="partners-block__pict">
+                            <img src="img/gazprom.png" alt="ГазПром" class="partners-block__img">
+                        </div>
+                        <div class="partners-block__pict">
+                            <img src="img/gazprom.png" alt="ГазПром" class="partners-block__img">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -173,7 +204,7 @@
         <div class="container">
             <h2 class="become__title animate__animated animate__fadeInDown wow"><span>стать</span> мецантом</h2>
             <div class="become-block animate__animated animate__fadeInLeft wow" data-wow-duration="1.5s">
-                <div class="become-block__item become-block__contacts">
+                <div class="become-block__item">
                    <div class="become-block__element become-block__address">
                         <p class="become-block__text">+7 (812) 123-45-55</p>
                         <p class="become-block__text">+7 (812) 123-45-66</p>
@@ -220,40 +251,7 @@
 
     <script src="js/wow.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        new WOW().init();
-        const windowWidth = document.body.clientWidth;
-        var slidesValueOne = 4;
-        var slidesValueTwo = 4;
-
-        if(windowWidth < 1200) {
-            slidesValueOne = 1.5;
-            slidesValueTwo = 1.3;
-        }
-        if(windowWidth > 1200) {
-            slidesValueOne = 4;
-        }
-
-        let mySwiper2 = new Swiper('#swiper-container2', {
-            watchSlidesProgress: true,
-            watchSlidesVisibility: true,
-            slidesPerView: slidesValueOne,
-        });
-        let mySwiper3 = new Swiper('#swiper-container3', {
-            watchSlidesProgress: true,
-            watchSlidesVisibility: true,
-            slidesPerView: slidesValueTwo,
-        });
-
-        // var swiper = new Swiper('.swiper-container');
-
-        // if(windowWidth > 992) {
-        //     document.getElementById("staging-body__oscar").classList.add("swiper-slide");
-        // }
-        // if(windowWidth < 992) {
-        //     document.getElementById("staging-body__oscar").classList.remove("swiper-slide");
-        // }
-    </script>
+    <script src="js/main.js"></script>
 
 </body>
 </html

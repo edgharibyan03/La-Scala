@@ -7,6 +7,10 @@ $OpenSansCondensed: 'Open Sans Condensed', sans-serif;
     box-sizing: border-box;
 }
 
+.fa{
+    color: #fff;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -60,12 +64,50 @@ span{
     Styles for JS
 */
 
+.navbar-active {
+    left: 0% !important;
+    transition: 0.3s;
+    background: #333333;
+    width: 300px;
+    z-index: 3;
+    height: 100%;
+    top: 0;
+    position: relative;
+}
+
+.active {
+    display: block !important;
+    z-index: 10;
+}
+
+.navbar-hamb.open .navbar-hamb__burger::before {
+    transform: rotate(45deg) translateX(0px);
+    transition: 0.3s all ease-in-out;
+}
+
+.navbar-hamb.open .navbar-hamb__burger{
+    transform: translateX(-10px);
+    background: transparent;
+    transition: 0.3s;
+}
+
+.navbar-hamb.open {
+    transform: translateX(180px);
+    transition: 0.3s;
+}
+
+.navbar-hamb.open .navbar-hamb__burger::after {
+    width: 26px;
+    transform: rotate(-45deg) translateY(-2px) translateX(2px); 
+    transition: 0.3s;
+}
+
 .styles{
     opacity: .4s;
     display: block;
 }
 
-/* Header / first block */
+/* Header and navbar/ first block */
 
 .header{
     position: relative;
@@ -182,7 +224,6 @@ span{
             margin-top: 140px;
         }
         &__brend{
-            color: #fff;
             margin-top: 30px;
             cursor: pointer;
         }
@@ -196,6 +237,15 @@ span{
         flex-direction: column;
         align-items: center;
         margin-top: 10px;
+    }
+}
+
+.navbar{
+    &-brands, &-hamb{
+        display: none;
+    }
+    &-hamb{
+        transition: 0.3s;
     }
 }
 
@@ -254,7 +304,7 @@ span{
         &__img{
             position: relative;
             height: 550px;
-            width: 25%;
+            width: 25% !important;
         }
         &__oscar{
             background: url(../img/oscar.webp);
@@ -386,14 +436,13 @@ span{
         margin-bottom: 20px;
     }
     &-block{
+        margin-top: 40px;
         &__item{
             display: flex;
             margin-top: 80px;
         }
         &__img{
-            width: 200px;
-            height: 96px;
-            margin-right: 50px;
+            margin-right: 103px;
         }
     }
 }
@@ -461,7 +510,6 @@ span{
         }
         &__send{
             display: flex;
-            justify-content: space-between;
         }
         &__btn{
             margin-top: 13px;
@@ -480,6 +528,7 @@ span{
         position: relative;
         display: flex;
         justify-content: space-between;
+        margin: 0 auto;
         &__text{
             color: #989898;
             font-size: 12px;
