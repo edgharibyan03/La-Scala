@@ -15,32 +15,34 @@
     <header class="header">
         <div class="container">
             <nav class="header-navbar animate__animated animate__fadeInDown wow" data-wow-duration="1.5s">
-                <div class="navbar-block navbar-block__links">
-                    <a href="#" class="header-navbar__item">Главная</a>
-                    <a href="#" class="header-navbar__item">о театре</a>
-                    <a href="#" class="header-navbar__item">Наши постановки</a>
-                    <a href="#" class="header-navbar__item">партнеры театра</a>
-                    <a href="#" class="header-navbar__item">контакты</a>
-                    <div class="navbar-brands">
-                        <div class="navbar-brands__block">
-                            <div class="navbar-brands__elem">
-                                <div class="navbar-brands__item fa fa-facebook fa-3x"></div>
-                                <div class="navbar-brands__item fa fa-instagram fa-3x"></div>
-                            </div>
-                            <div class="navbar-brands__elem">
-                                <div class="navbar-brands__item fa fa-youtube-play fa-3x"></div>
-                                <div class="navbar-brands__item fa fa-vk fa-3x"></div>
+                <div class="navbar-wrapper">
+                    <div class="navbar-block navbar-block__links">
+                        <a href="#" class="header-navbar__item">Главная</a>
+                        <a href="#" class="header-navbar__item">о театре</a>
+                        <a href="#" class="header-navbar__item">Наши постановки</a>
+                        <a href="#" class="header-navbar__item">партнеры театра</a>
+                        <a href="#" class="header-navbar__item">контакты</a>
+                        <div class="navbar-brands">
+                            <div class="navbar-brands__block">
+                                <div class="navbar-brands__elem">
+                                    <div class="navbar-brands__item fa fa-facebook fa-3x"></div>
+                                    <div class="navbar-brands__item fa fa-instagram fa-3x"></div>
+                                </div>
+                                <div class="navbar-brands__elem">
+                                    <div class="navbar-brands__item fa fa-youtube-play fa-3x"></div>
+                                    <div class="navbar-brands__item fa fa-vk fa-3x"></div>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="navbar-hamb animate__animated animate__fadeInDown wow">
+                        <span class="navbar-hamb__burger"></span>
                     </div>
                 </div>
                 <div class="navbar-block">
                     <a href="#" class="header-navbar__phone header-navbar__telephone">+7 495 123-45-67</a>
                 </div>
             </nav>
-            <div class="navbar-hamb animate__animated animate__fadeInDown wow">
-                <span class="navbar-hamb__burger"></span>
-            </div>
         </div>
         <div class="header-container">
             <div class="header-container__block animate__animated animate__fadeInLeft wow" data-wow-duration="1.5s">
@@ -93,14 +95,16 @@
                     можно считать 1784 год.</p>
                 </div>
                 <div class="about-body__item">
-                    <h3 class="about-body__title">немного о цифрах</h3>
-                    <div class="about-body__block">
-                        <img src="img/armchair.png" alt="места" class="about-body__img">
-                        <p class="about-body__info"><span class="about-span">1600</span> посадочных мест</p>
-                    </div>
-                    <div class="about-body__block">
-                        <img src="img/history.png" alt="История" class="about-body__img">
-                        <p class="about-body__info"><span class="about-span">350</span> лет истории</p>
+                    <h3 class="about-body__title about-body__numbers">немного о цифрах</h3>
+                    <div class="about-body__elem">
+                        <div class="about-body__block">
+                            <img src="img/armchair.png" alt="места" class="about-body__img">
+                            <p class="about-body__info"><span class="about-span">1600</span> посадочных мест</p>
+                        </div>
+                        <div class="about-body__block">
+                            <img src="img/history.png" alt="История" class="about-body__img">
+                            <p class="about-body__info"><span class="about-span">350</span> лет истории</p>
+                        </div>
                     </div>
                 </div>
                 <div class="about-body__item">
@@ -215,7 +219,7 @@
                    </div>
                 </div>
                 <div class="become-block__item">
-                    <div class="become-block__element">
+                    <div class="become-block__element become-block__inputs">
                         <div class="become-block__contact">
                             <form action="#">
                                 <input class="become-block__input" type="text" placeholder="Имя">
