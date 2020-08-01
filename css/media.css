@@ -8,7 +8,10 @@
     .header-navbar__item {
       margin-right: 50px; }
   .become-block__text:last-child {
-    line-height: 1.4em; } }
+    line-height: 1.4em; }
+  .about-body__numbers {
+    line-height: 1.3em;
+    margin-bottom: 10px; } }
 
 /* (992px - 1200px) */
 @media screen and (max-width: 1200px) {
@@ -50,6 +53,8 @@
       display: none; }
     .about-body__item:first-child {
       margin-right: 30px; }
+    .about-body__numbers {
+      margin-bottom: 43px; }
   .best .container {
     width: 100%; }
   .swiper-container {
